@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../static/to-do.css">
+</head>
+<body>
+
+  <div class="sidenav">
+    <a href="http://localhost:8080/">Home</a>
+      <a href="http://localhost:8080/tasks">Task Tracking</a>
+      <a href="http://localhost:8080/to-do">To Do List</a>
+      <a href="http://localhost:8080/journal">Journal</a>
+      <a href="http://localhost:8080/chill">Take a Chill Pill!</a>
+      <a href="http://localhost:8080/ChatBot">Bud</a>
+    </div>
+
+<div class="main">
+  <center><h1>Your To-Do List</h1></center>
+    <div class="container">
+      <p>
+        <label for="new-task">Add Task</label><input id="new-task" type="text"><button>Add</button>
+      </p>
+      <h3>Todo</h3>
+      <ul id="incomplete-tasks">
+        <li><input type="checkbox"><label>Finish Course</label><input type="text"><button class="edit">Edit</button><button class="delete">Delete</button></li>
+        <li class="editMode"><input type="checkbox"><label>Finish Assignment</label><input type="text" value="Go Shopping"><button class="edit">Edit</button><button class="delete">Delete</button></li>
+      </ul>
+      
+      <h3>Completed</h3>
+      <ul id="completed-tasks">
+        <li><input type="checkbox" checked><label>Attend Contest</label><input type="text"><button class="edit">Edit</button><button class="delete">Delete</button></li>
+      </ul>
+    </div>
+    <script type="text/javascript" src="../static/todo.js"></script>
+</div>
+</body>
+</html> 

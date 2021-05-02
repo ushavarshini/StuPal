@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../static/main.css">
+</style>
+</head>
+<body>
+
+  <div class="sidenav">
+    <a href="http://localhost:8080/">Home</a>
+      <a href="http://localhost:8080/tasks">Task Tracking</a>
+      <a href="http://localhost:8080/to-do">To Do List</a>
+      <a href="http://localhost:8080/journal">Journal</a>
+      <a href="http://localhost:8080/chill">Take a Chill Pill!</a>
+      <a href="http://localhost:8080/ChatBot">Bud</a>
+    </div>
+
+<div class="main">
+  <center>
+  <h1>Hi {{session.username}} and Welcome to StuPal!
+  </h1>  
+  Your one-stop portal to manage all study-at-home needs. <br>
+  Imagine how easier life would be with all platforms running under the same roof. 
+  That's where StuPal comes in handy. 
+   <p>Create an account with us to start working<a  href="{{url_for('register')}}"> Sign Up here</a></p>
+   <br>
+    <p><b>What can you do with StuPal?</p></b>
+    <ul style="list-style-type: square;">
+    <li> Manage your Schedule better with Intergration from Google and Teams </li>  <br>
+    <li>Make a list of your tasks and set Reminders for it.</li><br>
+    <li>Store your Daily Events in your own journal and also take notes!</li> <br>
+    <li>Chat with your Buddy bot for clarifications</li> <br>
+    <li>Sit back and relax with Spotify's Mood Booster Playlist</li> <br>
+    </ul>
+  <center>
+</div>
+<footer><a href="{{ url_for('logout') }}" class="btn">Logout</a></footer>
+</body>
+</html> 

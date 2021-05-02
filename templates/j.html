@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title> Register </title>
+		<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">			
+	</head>
+	<body></br></br></br></br></br>
+		<div align="center">
+		<div align="center" class="border">
+			<div class="header">
+				<h1 class="word">Journal</h1>
+			</div></br></br></br>
+			<h2 class="word">
+				<form action="{{ url_for('journal') }}" method="post">
+				<div class="msg">{{ msg }}</div>
+					<input id="entry" name="entry" type="text" placeholder="Enter Your JEntry" class="textbox"/></br></br>
+					</br></br>
+					<input type="submit" class="btn" value="Add Up"></br>
+				</form>
+			</h2>
+			<p class="bottom">Already have an account? <a class="bottom" href="{{url_for('login')}}"> Sign In here</a></p>
+		</div>
+		</div>
+	</body>
+</html>

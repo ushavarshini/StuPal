@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../static/main.css">
+</head>
+<body>
+
+  <div class="sidenav">
+    <a href="http://localhost:8080/">Home</a>
+      <a href="http://localhost:8080/tasks">Task Tracking</a>
+      <a href="http://localhost:8080/to-do">To Do List</a>
+      <a href="http://localhost:8080/journal">Journal</a>
+      <a href="http://localhost:8080/chill">Take a Chill Pill!</a>
+      <a href="http://localhost:8080/ChatBot">Bud</a>
+    </div>
+
+<div class="main"><center>
+  <h1>Your Daily Journal Entry</h1> 
+
+    <div class="container">
+      <p>
+        <form action="{{ url_for('journal') }}" method="post">
+          <div class="msg">{{ msg }}</div>
+            <input id="entry" name="entry" type="text" placeholder="Enter Your JournalEntry" class="textbox"/></br></br>
+            </br></br>
+            <input type="submit" class="btn" value="Add Up"></br>
+          </form>
+      </p>
+      </ul>
+    </center> 
+    </div>
+    <script type="text/javascript" src="../static/todo.js"></script>
+</div>
+</body>
+</html> 
